@@ -146,20 +146,20 @@ section { padding: 104px 0; }
 }
 
 /* Story (7 câu hỏi) */
-.story { display: grid; gap: 0; border-top: 1px solid var(--wine-line); }
+.story { border-top: 1px solid var(--wine-line); }
 .story-item {
-  padding: 44px 4px; border-bottom: 1px solid var(--wine-line);
-  display: grid; grid-template-columns: 96px 1fr; gap: 28px; align-items: start;
+  padding: 46px 4px; border-bottom: 1px solid var(--wine-line);
   transition: background .2s ease;
 }
 .story-item:hover { background: rgba(0,0,0,.14); }
-.story-item .num { font-family: var(--serif); font-size: 56px; color: var(--gold-40); font-weight: 700; line-height: .9; }
-.story-item h3 { font-size: 26px; margin: 0 0 16px; }
-.story-item p { margin: 0 0 14px; color: var(--cream-70); }
+.story-item .q { display: flex; align-items: baseline; gap: 24px; margin: 0 0 18px; }
+.story-item .num { font-family: var(--serif); font-size: 52px; color: var(--gold-40); font-weight: 700; line-height: 1; flex: none; }
+.story-item h3 { font-size: 26px; margin: 0; }
+.story-item p { margin: 0 0 14px; color: var(--cream-70); max-width: 80ch; }
 .story-item p:last-child { margin-bottom: 0; }
 .story-item .takeaway {
   margin-top: 20px; padding-left: 20px; border-left: 2px solid var(--gold);
-  font-family: var(--serif); font-style: italic; color: var(--gold); font-size: 20px; line-height: 1.5;
+  font-family: var(--serif); font-style: italic; color: var(--gold); font-size: 20px; line-height: 1.5; max-width: 72ch;
 }
 
 /* Values */
@@ -280,7 +280,8 @@ section { padding: 104px 0; }
   section { padding: 68px 0; }
   .values { grid-template-columns: 1fr; }
   .value { border-right: 0; }
-  .story-item { grid-template-columns: 1fr; gap: 10px; padding: 36px 0; }
-  .story-item .num { font-size: 44px; }
+  .story-item { padding: 36px 0; }
+  .story-item .q { gap: 16px; }
+  .story-item .num { font-size: 40px; }
   .contact-actions a i { display: none; }
 }
