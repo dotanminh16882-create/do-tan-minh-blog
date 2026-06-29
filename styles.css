@@ -215,6 +215,24 @@ section { padding: 104px 0; }
   font-family: var(--serif); font-style: italic; font-size: 18px; line-height: 1.5;
 }
 
+/* Blog listing — card grid */
+.posts-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+.post-card {
+  background: var(--wine-deep); border: 1px solid var(--gold-22); padding: 34px 36px;
+  display: flex; flex-direction: column; transition: border-color .2s ease, transform .2s ease;
+}
+.post-card:hover { border-color: var(--gold); transform: translateY(-3px); }
+.post-card.feat { grid-column: 1 / -1; padding: 44px 44px; }
+.post-tag { font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
+.post-card h3 { font-size: 24px; margin: 0 0 14px; line-height: 1.25; }
+.post-card.feat h3 { font-size: 34px; }
+.post-card p { color: var(--cream-70); margin: 0 0 22px; flex: 1 1 auto; }
+.post-card.feat p { font-family: var(--serif); font-size: 19px; max-width: 60ch; }
+@media (max-width: 760px) {
+  .posts-grid { grid-template-columns: 1fr; }
+  .post-card.feat h3 { font-size: 27px; }
+}
+
 /* Contact */
 .contact-card {
   background: var(--ink); border: 1px solid var(--gold-40);
