@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đường Thoát - Bộ công cụ giúp nhà đầu tư F0 không chôn vốn vào bất động sản</title>
+  <meta name="description" content="Nhận MIỄN PHÍ Bộ công cụ Đường Thoát: Bảng chấm Điểm Thanh Khoản + Checklist 7 cờ đỏ pháp lý + Mini-guide '3 cách F0 chôn vốn'. Biết một miếng BĐS có BÁN ĐƯỢC không, trước khi bạn xuống tiền.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    // TODO: thay YOUR_PIXEL_ID roi bo comment 2 dong duoi
+    // fbq('init', 'YOUR_PIXEL_ID');
+    // fbq('track', 'PageView');
+  </script>
+
+  <style>
+    :root{--primary:#8a1325;--secondary:#c9a227;--gradient:linear-gradient(135deg,#8a1325 0%,#c9a227 100%);--gradient-soft:linear-gradient(135deg,rgba(138,19,37,0.08),rgba(201,162,39,0.08));--gradient-medium:linear-gradient(135deg,rgba(138,19,37,0.15),rgba(201,162,39,0.15));--bg-primary:#fff;--bg-secondary:#f8fafc;--bg-tertiary:#f1f5f9;--text-primary:#0f172a;--text-secondary:#475569;--text-muted:#64748b;--glass-bg:rgba(255,255,255,0.7);--glass-shadow:0 8px 32px rgba(138,19,37,0.08);--glass-inset:inset 0 1px 0 rgba(255,255,255,0.6);--blob-opacity:0.35;--shadow-md:0 8px 24px rgba(138,19,37,.1);--shadow-lg:0 20px 60px rgba(138,19,37,.12);--radius-sm:8px;--radius-md:12px;--radius-lg:16px;--radius-xl:20px;--radius-2xl:24px;--radius-pill:50px;--transition-normal:.3s ease;--transition-smooth:.4s cubic-bezier(.4,0,.2,1);--transition-slow:.8s cubic-bezier(.4,0,.2,1);}
+    [data-theme="dark"]{--bg-primary:#0a0f1c;--bg-secondary:#111827;--bg-tertiary:#1e293b;--text-primary:#f1f5f9;--text-secondary:#94a3b8;--text-muted:#64748b;--glass-bg:rgba(15,23,42,0.6);--glass-shadow:0 8px 32px rgba(0,0,0,0.3);--glass-inset:inset 0 1px 0 rgba(255,255,255,0.05);--blob-opacity:0.2;--shadow-md:0 8px 24px rgba(0,0,0,.3);--shadow-lg:0 20px 60px rgba(0,0,0,.4);}
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg-primary);color:var(--text-primary);line-height:1.6;overflow-x:hidden;transition:background .3s,color .3s}
+    ::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:var(--bg-secondary)}::-webkit-scrollbar-thumb{background:var(--gradient);border-radius:5px}
+    .gradient-text{background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    .reveal{opacity:0;transform:translateY(30px);transition:all var(--transition-slow)}
+    .reveal.active{opacity:1;transform:translateY(0)}
+    .section-tag{display:inline-block;background:var(--gradient-soft);color:var(--primary);padding:.5rem 1rem;border-radius:var(--radius-pill);font-size:.85rem;font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-bottom:1rem}
+    .section{padding:5rem 2rem;position:relative}
+    .container{max-width:1100px;margin:0 auto}
+    .section-header{text-align:center;max-width:720px;margin:0 auto 3rem}
+    .section-header h2{font-size:clamp(1.8rem,4vw,2.8rem);font-weight:800;letter-spacing:-.02em;margin-bottom:1rem;line-height:1.2}
+    .section-header p{color:var(--text-secondary);font-size:1.1rem}
+
+    .bg-decoration{position:fixed;inset:0;pointer-events:none;z-index:-1;overflow:hidden}
+    .bg-blob{position:absolute;border-radius:50%;filter:blur(80px);opacity:var(--blob-opacity);animation:blobFloat 20s ease-in-out infinite}
+    .bg-blob-1{width:600px;height:600px;background:var(--primary);top:-200px;right:-200px}
+    .bg-blob-2{width:500px;height:500px;background:var(--secondary);bottom:-150px;left:-150px;animation-delay:-7s}
+    .bg-blob-3{width:400px;height:400px;background:var(--gradient);top:50%;left:50%;transform:translate(-50%,-50%);animation-delay:-14s}
+    @keyframes blobFloat{0%,100%{transform:translate(0,0) scale(1)}25%{transform:translate(30px,-30px) scale(1.05)}50%{transform:translate(-20px,20px) scale(.95)}75%{transform:translate(-30px,-20px) scale(1.02)}}
+
+    header{position:fixed;top:0;left:0;width:100%;z-index:1000;padding:.75rem 0;transition:all var(--transition-smooth)}
+    header.scrolled{background:var(--glass-bg);backdrop-filter:blur(20px) saturate(1.8);-webkit-backdrop-filter:blur(20px) saturate(1.8);box-shadow:0 4px 30px rgba(138,19,37,0.1)}
+    .header-container{max-width:1400px;margin:0 auto;padding:0 2rem;display:flex;justify-content:space-between;align-items:center}
+    .logo{display:flex;align-items:center;gap:.6rem;text-decoration:none;color:var(--text-primary);font-weight:800;font-size:1.15rem;letter-spacing:-.02em}
+    .logo-mark{width:38px;height:38px;border-radius:11px;background:var(--gradient);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;box-shadow:0 4px 14px rgba(138,19,37,.35)}
+    .header-actions{display:flex;align-items:center;gap:.75rem}
+    .theme-toggle{width:40px;height:40px;border-radius:50%;border:none;background:var(--bg-tertiary);color:var(--text-primary);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .3s}
+    .theme-toggle:hover{color:var(--primary)}
+    .sun-icon{display:none}[data-theme="dark"] .sun-icon{display:block}[data-theme="dark"] .moon-icon{display:none}
+    .btn-primary{display:inline-flex;align-items:center;gap:.5rem;background:var(--gradient);color:#fff;padding:.9rem 1.75rem;border-radius:var(--radius-pill);text-decoration:none;font-weight:700;box-shadow:0 4px 16px rgba(138,19,37,.3);transition:all .3s;border:none;cursor:pointer;font-family:'Inter',sans-serif;font-size:1rem}
+    .btn-primary:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(138,19,37,.4)}
+    .btn-ghost{display:inline-flex;align-items:center;gap:.5rem;background:var(--bg-tertiary);color:var(--text-primary);padding:.9rem 1.75rem;border-radius:var(--radius-pill);text-decoration:none;font-weight:600;transition:all .3s}
+    .btn-ghost:hover{color:var(--primary)}
+    .nav-menu{display:flex;align-items:center;gap:.25rem;margin-right:.5rem}
+    .nav-link{padding:.55rem .9rem;border-radius:var(--radius-pill);color:var(--text-secondary);text-decoration:none;font-size:.92rem;font-weight:500;transition:all .25s;white-space:nowrap}
+    .nav-link:hover{color:var(--primary);background:var(--gradient-soft)}
+    .menu-toggle{display:none;width:40px;height:40px;border-radius:50%;border:none;background:var(--bg-tertiary);color:var(--text-primary);cursor:pointer;align-items:center;justify-content:center}
+    .mobile-nav{position:fixed;top:0;right:0;width:280px;max-width:85vw;height:100vh;background:var(--bg-primary);box-shadow:-10px 0 40px rgba(0,0,0,.15);z-index:1100;transform:translateX(100%);transition:transform .35s cubic-bezier(.4,0,.2,1);display:flex;flex-direction:column;padding:5rem 1.5rem 2rem}
+    .mobile-nav.open{transform:translateX(0)}
+    .mobile-nav .nav-link{padding:1rem;border-radius:var(--radius-md);font-size:1.05rem;font-weight:600;color:var(--text-primary)}
+    .mobile-nav .btn-primary{margin-top:1rem;justify-content:center}
+    .mobile-nav-close{position:absolute;top:1rem;right:1rem;width:40px;height:40px;border-radius:50%;border:none;background:var(--bg-tertiary);color:var(--text-primary);cursor:pointer;display:flex;align-items:center;justify-content:center}
+    .mobile-overlay{position:fixed;inset:0;background:rgba(0,0,0,.4);backdrop-filter:blur(4px);z-index:1050;opacity:0;pointer-events:none;transition:opacity .3s}
+    .mobile-overlay.open{opacity:1;pointer-events:auto}
+    @media(max-width:1024px){.nav-menu{display:none}.menu-toggle{display:flex}}
+    @media(max-width:768px){.btn-header-cta{display:none}}
+
+    /* Hero */
+    .hero{min-height:100vh;display:flex;align-items:center;padding:7rem 2rem 4rem;position:relative;overflow:hidden}
+    .hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(138,19,37,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(138,19,37,.04) 1px,transparent 1px);background-size:60px 60px;mask-image:radial-gradient(ellipse at center,black 30%,transparent 75%);-webkit-mask-image:radial-gradient(ellipse at center,black 30%,transparent 75%);pointer-events:none;animation:gridPulse 8s ease-in-out infinite}
+    @keyframes gridPulse{0%,100%{opacity:.6}50%{opacity:1}}
+    .hero-container{max-width:920px;margin:0 auto;text-align:center;position:relative;z-index:1}
+    .hero h1{font-size:clamp(2.2rem,5.5vw,3.7rem);font-weight:800;letter-spacing:-.03em;line-height:1.12;margin-bottom:1.25rem}
+    .hero-sub{font-size:clamp(1.05rem,2vw,1.3rem);color:var(--text-secondary);max-width:720px;margin:0 auto 2rem}
+    .hero-cta{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1.5rem}
+    .hero-trust{display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap;color:var(--text-muted);font-size:.9rem;font-weight:500}
+    .hero-trust span{display:inline-flex;align-items:center;gap:.4rem}
+    /* Hero 2 cột: trái = form thu lead, phải = ảnh ebook */
+    .hero-2col{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:1.05fr .95fr;gap:3rem;align-items:center;position:relative;z-index:1}
+    .hero-left .section-tag{margin-bottom:1rem}
+    .hero-left h1{font-size:clamp(1.7rem,3vw,2.5rem);font-weight:800;letter-spacing:-.02em;line-height:1.15;margin-bottom:.75rem;text-align:left}
+    .hero-left .hero-sub{font-size:1.05rem;color:var(--text-secondary);max-width:none;margin:0 0 1.5rem}
+    .hero-form{padding:2rem}
+    .hero-form .form-title{text-align:left}
+    .hero-form .form-title h3{font-size:1.3rem}
+    .hero-right{text-align:center}
+    .ebook-wrap{position:relative;display:inline-block;max-width:100%}
+    .ebook-img{max-width:100%;width:430px;height:auto;border-radius:12px;box-shadow:0 30px 80px rgba(138,19,37,.25)}
+    .ebook-wrap.noimg{width:300px;height:420px;border-radius:12px;background:var(--gradient);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:1.5rem;padding:2rem;text-align:center;box-shadow:0 30px 80px rgba(138,19,37,.25)}
+    .ebook-badge{position:absolute;top:16px;left:-8px;background:#fff;color:var(--primary);font-weight:800;font-size:.78rem;letter-spacing:.5px;padding:.5rem .9rem;border-radius:8px;box-shadow:0 8px 20px rgba(0,0,0,.18);transform:rotate(-7deg);z-index:2}
+    .hero-bullets{list-style:none;margin:1.5rem 0 0;display:inline-flex;flex-direction:column;gap:.55rem;text-align:left}
+    .hero-bullets li{display:flex;gap:.55rem;align-items:center;color:var(--text-secondary);font-weight:600;font-size:.98rem}
+    .hero-bullets .icon{color:#22c55e;width:20px;height:20px}
+    .icon{width:1.25em;height:1.25em;flex-shrink:0;vertical-align:middle}
+
+    /* Pain */
+    .pain-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+    .pain-card{position:relative;background:var(--glass-bg);backdrop-filter:blur(20px) saturate(1.8);-webkit-backdrop-filter:blur(20px) saturate(1.8);border-radius:var(--radius-xl);box-shadow:var(--glass-shadow),var(--glass-inset);padding:2rem 1.75rem}
+    .pain-icon{width:52px;height:52px;border-radius:14px;background:rgba(239,68,68,.12);color:#ef4444;display:flex;align-items:center;justify-content:center;margin-bottom:1rem}
+    .pain-icon .icon{width:26px;height:26px}
+    .pain-card h3{font-size:1.15rem;font-weight:700;margin-bottom:.5rem}
+    .pain-card p{color:var(--text-secondary);font-size:.97rem}
+
+    /* Big idea banner */
+    .bigidea{background:var(--gradient);color:#fff;text-align:center;padding:4rem 2rem;border-radius:var(--radius-2xl);max-width:1000px;margin:0 auto;box-shadow:var(--shadow-lg)}
+    .bigidea h2{font-size:clamp(1.6rem,4vw,2.6rem);font-weight:800;line-height:1.25;letter-spacing:-.02em}
+    .bigidea p{margin-top:1rem;font-size:1.1rem;opacity:.95;max-width:680px;margin-left:auto;margin-right:auto}
+
+    /* Gifts */
+    .gift-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+    .gift-card{position:relative;background:var(--bg-secondary);border-radius:var(--radius-xl);padding:2.25rem 1.75rem 2rem;box-shadow:var(--shadow-md)}
+    .card-number{position:absolute;top:-16px;right:18px;width:44px;height:44px;border-radius:50%;background:var(--gradient);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.05rem;box-shadow:0 6px 16px rgba(138,19,37,.3)}
+    .gift-icon{width:56px;height:56px;border-radius:15px;background:var(--gradient-medium);color:var(--primary);display:flex;align-items:center;justify-content:center;margin-bottom:1rem}
+    .gift-icon .icon{width:28px;height:28px}
+    .gift-card h3{font-size:1.15rem;font-weight:700;margin-bottom:.5rem;padding-right:2.5rem}
+    .gift-card p{color:var(--text-secondary);font-size:.95rem}
+    .gift-tag{display:inline-block;margin-top:.9rem;font-size:.8rem;font-weight:700;color:var(--primary);background:var(--gradient-soft);padding:.3rem .7rem;border-radius:var(--radius-pill)}
+
+    /* Author / EEAT */
+    .author{display:grid;grid-template-columns:1fr 1.4fr;gap:2.5rem;align-items:center;background:var(--glass-bg);backdrop-filter:blur(20px) saturate(1.8);-webkit-backdrop-filter:blur(20px) saturate(1.8);border-radius:var(--radius-2xl);box-shadow:var(--glass-shadow),var(--glass-inset);padding:2.5rem;max-width:1000px;margin:0 auto}
+    .author-photo{aspect-ratio:3/4;width:100%;object-fit:cover;border-radius:var(--radius-xl);background:var(--gradient);display:flex;align-items:center;justify-content:center;color:#fff;font-size:3.5rem;font-weight:800;box-shadow:var(--shadow-md);overflow:hidden}
+    .author h2{font-size:1.6rem;font-weight:800;margin-bottom:.25rem}
+    .author .role{color:var(--primary);font-weight:600;margin-bottom:1rem}
+    .cred-list{list-style:none;display:flex;flex-direction:column;gap:.75rem}
+    .cred-list li{display:flex;gap:.7rem;align-items:flex-start;color:var(--text-secondary)}
+    .cred-list .icon{color:var(--primary);margin-top:3px}
+
+    /* Trust strip */
+    .trust-strip{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;max-width:900px;margin:2.5rem auto 0}
+    .trust-pill{display:inline-flex;align-items:center;gap:.5rem;background:var(--bg-secondary);padding:.7rem 1.2rem;border-radius:var(--radius-pill);font-weight:600;font-size:.92rem}
+    .trust-pill .icon{color:#22c55e}
+
+    /* FAQ */
+    .faq-list{max-width:780px;margin:0 auto;display:flex;flex-direction:column;gap:1rem}
+    .faq-item{background:var(--bg-secondary);border-radius:var(--radius-lg);overflow:hidden}
+    .faq-q{width:100%;text-align:left;padding:1.25rem 1.5rem;background:none;border:none;font-family:inherit;font-size:1.05rem;font-weight:600;color:var(--text-primary);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem}
+    .faq-q .icon{transition:transform .3s;flex-shrink:0;color:var(--primary)}
+    .faq-item.open .faq-q .icon{transform:rotate(180deg)}
+    .faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease;color:var(--text-secondary)}
+    .faq-a-inner{padding:0 1.5rem 1.25rem}
+    .faq-item.open .faq-a{max-height:300px}
+
+    /* Form */
+    .form-section{padding:5rem 2rem;position:relative}
+    .form-wrapper{max-width:580px;margin:0 auto}
+    .form-container{background:var(--glass-bg);backdrop-filter:blur(20px) saturate(1.8);-webkit-backdrop-filter:blur(20px) saturate(1.8);border-radius:var(--radius-2xl);box-shadow:var(--glass-shadow),var(--glass-inset);padding:2.5rem}
+    .form-title{text-align:center}
+    .form-title h3{font-size:1.5rem;font-weight:800;margin-bottom:.5rem}
+    .form-title p{color:var(--text-secondary);margin-bottom:1.5rem}
+    .form-group{margin-bottom:1.25rem}
+    .form-group label{display:block;font-weight:600;margin-bottom:.5rem;font-size:.9rem}
+    .form-group input,.form-group select{width:100%;padding:.85rem 1rem;background:var(--bg-primary);color:var(--text-primary);border:1.5px solid var(--bg-tertiary);border-radius:var(--radius-md);font-family:inherit;font-size:1rem;transition:all .3s}
+    .form-group input:focus,.form-group select:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 3px rgba(138,19,37,.1)}
+    .form-group input.error,.form-group select.error{border-color:#ef4444}
+    .form-error{display:none;color:#ef4444;font-size:.82rem;margin-top:.35rem}
+    .form-group.has-error .form-error{display:block}
+    .hp-field{position:absolute;left:-9999px;opacity:0;pointer-events:none}
+    .form-submit{width:100%;display:inline-flex;align-items:center;justify-content:center;gap:.5rem;background:var(--gradient);color:#fff;border:none;padding:1.05rem 1.5rem;border-radius:var(--radius-pill);font-family:inherit;font-weight:700;font-size:1.05rem;cursor:pointer;transition:all .3s;box-shadow:0 4px 16px rgba(138,19,37,.3)}
+    .form-submit:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(138,19,37,.4)}
+    .form-submit:disabled{opacity:.7;cursor:not-allowed;transform:none}
+    .form-submit .spinner{display:none}
+    .form-submit.loading .btn-text,.form-submit.loading .btn-icon{display:none}
+    .form-submit.loading .spinner{display:block;animation:spin 1s linear infinite}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    .form-note{text-align:center;font-size:.85rem;color:var(--text-muted);margin-top:1rem}
+    .form-fields.hidden{display:none}
+    .form-thanks{display:none;text-align:center;padding:2rem 0;animation:fadeInUp .5s ease}
+    .form-thanks.active{display:block}
+    @keyframes fadeInUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+    .confirmed-icon{width:72px;height:72px;margin:0 auto 1rem;border-radius:50%;background:var(--gradient);color:#fff;display:flex;align-items:center;justify-content:center}
+
+    /* Cohort soft CTA */
+    .cohort{background:var(--bg-secondary);border-radius:var(--radius-2xl);padding:2.5rem;max-width:900px;margin:0 auto;text-align:center}
+    .cohort h3{font-size:1.4rem;font-weight:800;margin-bottom:.5rem}
+    .cohort p{color:var(--text-secondary);max-width:620px;margin:0 auto 1.5rem}
+
+    /* Disclaimer + footer */
+    .disclaimer{max-width:900px;margin:3rem auto 0;background:var(--bg-tertiary);border-radius:var(--radius-lg);padding:1.25rem 1.5rem;color:var(--text-muted);font-size:.85rem;text-align:center}
+    footer{padding:3rem 2rem;text-align:center;background:var(--bg-secondary);margin-top:4rem}
+    .footer-logo{display:inline-flex;align-items:center;gap:.6rem;font-weight:800;font-size:1.1rem;margin-bottom:.5rem;color:var(--text-primary)}
+    .footer-desc{color:var(--text-muted);margin-bottom:1rem}
+    .footer-links{display:flex;gap:1.5rem;justify-content:center;margin-bottom:1rem;flex-wrap:wrap}
+    .footer-links a{color:var(--text-secondary);text-decoration:none;transition:color .3s}
+    .footer-links a:hover{color:var(--primary)}
+    .footer-copy{color:var(--text-muted);font-size:.85rem}
+
+    @media(max-width:1024px){.hero{padding:6rem 1.5rem 3rem}.header-container{padding:0 1.25rem}}
+    @media(max-width:768px){
+      .section{padding:3.5rem 1rem}
+      .pain-grid,.gift-grid{grid-template-columns:1fr}
+      .author{grid-template-columns:1fr;text-align:center;padding:1.75rem}
+      .author-photo{max-width:160px;margin:0 auto}
+      .cred-list li{text-align:left}
+      .bg-blob-1{width:300px;height:300px;top:-100px;right:-100px}
+      .bg-blob-2{width:250px;height:250px;bottom:-80px;left:-80px}
+      .bg-blob-3{width:200px;height:200px}
+      .hero{padding:5.5rem 1rem 2.5rem;min-height:auto}
+      .hero-2col{grid-template-columns:1fr;gap:2rem}
+      .hero-left h1{text-align:center}
+      .hero-left .section-tag{display:block;text-align:center}
+      .hero-form{padding:1.5rem}
+      .ebook-img{width:260px}
+      .form-container{padding:1.5rem}
+      .form-section{padding:3.5rem 1rem}
+      .hero-cta{flex-direction:column;align-items:stretch}
+      .hero-cta .btn-primary,.hero-cta .btn-ghost{justify-content:center;width:100%}
+      .header-container{padding:0 1rem}
+      .form-group input,.form-group select{font-size:16px}
+      .footer-links{flex-direction:column;gap:.5rem}
+    }
+    @media(max-width:480px){.hero h1{font-size:1.85rem;line-height:1.2}.form-container{padding:1.25rem}}
+  </style>
+</head>
+<body>
+  <div class="bg-decoration">
+    <div class="bg-blob bg-blob-1"></div>
+    <div class="bg-blob bg-blob-2"></div>
+    <div class="bg-blob bg-blob-3"></div>
+  </div>
+
+  <header id="header">
+    <div class="header-container">
+      <a href="#" class="logo"><span class="logo-mark">ĐT</span> Đường Thoát</a>
+      <nav class="nav-menu" id="navMenu" aria-label="Menu chính">
+        <a href="#noi-dau" class="nav-link">Nỗi đau</a>
+        <a href="#qua-tang" class="nav-link">Quà tặng</a>
+        <a href="#vi-sao" class="nav-link">Vì sao tin</a>
+        <a href="#faq" class="nav-link">Hỏi đáp</a>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Đổi chủ đề">
+          <svg class="sun-icon icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          <svg class="moon-icon icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <a href="#nhan-ngay" class="btn-primary btn-header-cta">Nhận miễn phí</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Mở menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+  <aside class="mobile-nav" id="mobileNav" aria-label="Menu di động">
+    <button class="mobile-nav-close" id="mobileNavClose" aria-label="Đóng menu">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <a href="#noi-dau" class="nav-link">Nỗi đau</a>
+    <a href="#qua-tang" class="nav-link">Quà tặng</a>
+    <a href="#vi-sao" class="nav-link">Vì sao tin</a>
+    <a href="#faq" class="nav-link">Hỏi đáp</a>
+    <a href="#nhan-ngay" class="btn-primary">Nhận miễn phí</a>
+  </aside>
+
+  <!-- HERO -->
+  <section class="hero" id="nhan-ngay">
+    <div class="hero-grid"></div>
+    <div class="hero-2col">
+      <!-- TRÁI: form thu lead -->
+      <div class="hero-left reveal">
+        <span class="section-tag">Dành cho nhà đầu tư BĐS F0 · Tặng miễn phí</span>
+        <h1>Trước khi xuống tiền, hãy biết: <span class="gradient-text">miếng này có BÁN ĐƯỢC không?</span></h1>
+        <p class="hero-sub">Người ta dạy bạn MUA. Tôi tặng bạn <strong>Bộ công cụ Đường Thoát</strong> để vốn không nằm chết 2-3 năm.</p>
+        <div class="form-container hero-form">
+          <div class="form-title">
+            <h3>Nhận bộ công cụ miễn phí 🎁</h3>
+            <p>Điền 3 thông tin là gửi ngay.</p>
+          </div>
+          <form id="regForm" class="form-fields" novalidate>
+            <div class="hp-field" aria-hidden="true">
+              <label for="website">Website</label>
+              <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+            </div>
+            <div class="form-group">
+              <label for="fullname">Họ và tên *</label>
+              <input type="text" id="fullname" name="fullname" placeholder="VD: Nguyễn Văn A" required>
+              <div class="form-error">Vui lòng nhập họ tên</div>
+            </div>
+            <div class="form-group">
+              <label for="phone">Số điện thoại (Zalo) *</label>
+              <input type="tel" id="phone" name="phone" placeholder="VD: 0901234567" required inputmode="tel">
+              <div class="form-error">Vui lòng nhập số điện thoại hợp lệ</div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" placeholder="VD: email@gmail.com" required inputmode="email">
+              <div class="form-error">Vui lòng nhập email hợp lệ</div>
+            </div>
+            <!-- [CUSTOM-FIELDS] -->
+            <button type="submit" class="form-submit" id="submitBtn">
+              <svg class="spinner" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg>
+              <svg class="btn-icon icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              <span class="btn-text">NHẬN BỘ CÔNG CỤ MIỄN PHÍ</span>
+            </button>
+            <p class="form-note">Miễn phí 100% · Nhận ngay · Không spam.</p>
+          </form>
+          <div class="form-thanks" id="formThanks">
+            <div class="confirmed-icon">
+              <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <h3>Đăng ký thành công!</h3>
+            <p style="color:var(--text-secondary);margin-top:.5rem;">Bộ công cụ Đường Thoát sẽ được gửi tới email/Zalo của bạn trong giây lát. Kiểm tra cả hộp thư rác (spam) giúp tôi nhé.</p>
+          </div>
+        </div>
+      </div>
+      <!-- PHẢI: ảnh ebook -->
+      <div class="hero-right reveal">
+        <div class="ebook-wrap">
+          <span class="ebook-badge">TẶNG MIỄN PHÍ</span>
+          <img src="ebook-cover.jpg" alt="Ebook Đường Thoát - Đỗ Tấn Minh" class="ebook-img" onerror="var w=this.parentElement;w.classList.add('noimg');this.remove();w.textContent='ĐƯỜNG THOÁT';">
+        </div>
+        <ul class="hero-bullets">
+          <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Bảng chấm Điểm Thanh Khoản (Excel)</li>
+          <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Checklist 7 cờ đỏ pháp lý</li>
+          <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Mini-guide 3 cách F0 chôn vốn</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAIN -->
+  <section class="section" id="noi-dau">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Có phải bạn đang...</span>
+        <h2>Nỗi sợ lớn nhất của nhà đầu tư F0 không phải "mua hớ" - mà là <span class="gradient-text">chôn vốn</span></h2>
+        <p>Tiền chết không phải vì bạn mua đắt. Mà vì khi cần bán, không ai mua lại.</p>
+      </div>
+      <div class="pain-grid">
+        <div class="pain-card reveal">
+          <div class="pain-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 7 13.5 15.5l-5-5L2 17"/><path d="M16 7h6v6"/></svg></div>
+          <h3>Ôm hàng 2-3 năm không ra được</h3>
+          <p>Mua xong thị trường nguội, rao mãi không ai hỏi, trong khi vẫn è cổ trả lãi ngân hàng mỗi tháng.</p>
+        </div>
+        <div class="pain-card reveal">
+          <div class="pain-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 10 18H2L12 2z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg></div>
+          <h3>Cắt lỗ 30-50% mới thoát được</h3>
+          <p>Đến lúc cần tiền gấp, bán bằng mọi giá - mất luôn phần lớn vốn tích cóp nhiều năm.</p>
+        </div>
+        <div class="pain-card reveal">
+          <div class="pain-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v3l2 2"/></svg></div>
+          <h3>Không phân biệt "rẻ" với "thanh khoản kém"</h3>
+          <p>Tưởng mua được giá hời, hoá ra rẻ vì... chẳng ai muốn mua. Môi giới chỉ nói cái tốt, không nói đường ra.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BIG IDEA -->
+  <section class="section">
+    <div class="bigidea reveal">
+      <h2>"Người ta dạy bạn MUA.<br>Tôi dạy bạn BÁN ĐƯỢC - trước khi bạn xuống tiền."</h2>
+      <p>Chỉ xuống tiền vào miếng có đường ra rõ ràng. Đó là khác biệt giữa nhà đầu tư sống sót và người ôm bom.</p>
+    </div>
+  </section>
+
+  <!-- GIFTS / LEAD MAGNET -->
+  <section class="section" id="qua-tang">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Quà tặng miễn phí</span>
+        <h2>Bộ công cụ <span class="gradient-text">Đường Thoát</span> - 3 thứ bạn nhận ngay</h2>
+        <p>Đủ để bạn tự "soi" một miếng BĐS trước khi đặt cọc, mà không cần hỏi ai.</p>
+      </div>
+      <div class="gift-grid">
+        <div class="gift-card reveal">
+          <span class="card-number">1</span>
+          <div class="gift-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 7h8M8 11h8M8 15h5"/></svg></div>
+          <h3>Bảng chấm "Điểm Thanh Khoản"</h3>
+          <p>File Google Sheet/Excel: nhập vài thông số của lô đất/căn hộ, ra ngay điểm thanh khoản + ước thời gian thoát hàng.</p>
+          <span class="gift-tag">Google Sheet / Excel</span>
+        </div>
+        <div class="gift-card reveal">
+          <span class="card-number">2</span>
+          <div class="gift-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="m9 15 2 2 4-4"/></svg></div>
+          <h3>Checklist "7 cờ đỏ pháp lý giết thanh khoản"</h3>
+          <p>Quy hoạch treo, sổ chung, tranh chấp, lối đi... - những thứ khiến BĐS đẹp giá vẫn không bán được. Tự rà trong 15 phút.</p>
+          <span class="gift-tag">Checklist PDF</span>
+        </div>
+        <div class="gift-card reveal">
+          <span class="card-number">3</span>
+          <div class="gift-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
+          <h3>Mini-guide "3 cách F0 chôn vốn và cách né"</h3>
+          <p>3 sai lầm khiến tiền nằm chết phổ biến nhất - và cách bạn tránh từng cái ngay từ trước khi mua.</p>
+          <span class="gift-tag">Cẩm nang ngắn</span>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:2.5rem" class="reveal">
+        <a href="#nhan-ngay" class="btn-primary">Nhận trọn bộ miễn phí ngay</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- AUTHOR / EEAT -->
+  <section class="section" id="vi-sao">
+    <div class="author reveal">
+      <img src="anh-minh.jpg" alt="Đỗ Tấn Minh - cố vấn bất động sản dòng tiền" class="author-photo" onerror="this.outerHTML='&lt;div class=\'author-photo\'&gt;ĐM&lt;/div&gt;'">
+      <div>
+        <span class="section-tag">Vì sao tin tôi</span>
+        <h2>Đỗ Tấn Minh</h2>
+        <div class="role">Cố vấn bất động sản dòng tiền</div>
+        <ul class="cred-list">
+          <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> <span><strong>Môi giới thực chiến:</strong> chính tôi là người đi bán, nên tôi biết miếng nào <em>thực sự</em> dễ ra hàng - không phải lý thuyết.</span></li>
+          <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> <span><strong>Nhà đầu tư lướt sóng:</strong> đã tự định giá, canh timing vào - ra bằng tiền thật của mình.</span></li>
+          <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> <span><strong>Mạnh pháp lý/thủ tục:</strong> sổ đỏ, vay vốn ngân hàng, quy hoạch - đúng những thứ quyết định một BĐS có bán được hay không.</span></li>
+          <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> <span><strong>Người đã đi và đã thắng</strong> - không phải giảng viên đứng lớp nói chuyện trên giấy.</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="trust-strip">
+      <span class="trust-pill"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Tài liệu miễn phí 100%</span>
+      <span class="trust-pill"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Thông tin được bảo mật</span>
+      <span class="trust-pill"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Không gọi điện làm phiền</span>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Hỏi đáp nhanh</span>
+        <h2>Câu hỏi thường gặp</h2>
+      </div>
+      <div class="faq-list reveal">
+        <div class="faq-item">
+          <button class="faq-q">Bộ công cụ này có thật sự miễn phí không?<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-a"><div class="faq-a-inner">Có, miễn phí 100%. Bạn chỉ cần để lại thông tin liên hệ để tôi gửi bộ công cụ qua email/Zalo. Không thu phí, không ràng buộc.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Tôi chưa từng đầu tư BĐS, dùng được không?<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-a"><div class="faq-a-inner">Được - bộ công cụ thiết kế cho đúng người mới (F0). Bảng chấm điểm chỉ cần bạn nhập thông số có sẵn trong tin rao, không cần kiến thức tài chính nâng cao.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Nhận tài liệu bằng cách nào, mất bao lâu?<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-a"><div class="faq-a-inner">Ngay sau khi điền form, bạn sẽ nhận được liên kết tải bộ công cụ qua email/Zalo bạn cung cấp, thường trong vài phút.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Đây có phải tư vấn đầu tư để tôi mua theo không?<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-a"><div class="faq-a-inner">Không. Đây là tài liệu mang tính giáo dục, giúp bạn TỰ ra quyết định tốt hơn. Mọi quyết định mua/bán là của bạn; nên đối chiếu thêm với luật sư/công chứng cho phần pháp lý.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Sau khi nhận quà, tôi có bị làm phiền không?<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-a"><div class="faq-a-inner">Không spam. Thi thoảng tôi gửi thêm phân tích deal thật hữu ích; bạn có thể ngừng nhận bất cứ lúc nào.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORM -->
+  <section class="section" style="text-align:center">
+    <div class="container">
+      <div class="section-header reveal" style="margin-bottom:1.5rem">
+        <span class="section-tag">Nhận ngay</span>
+        <h2>Sẵn sàng biết miếng nào <span class="gradient-text">bán được</span> trước khi xuống tiền?</h2>
+        <p>Nhận miễn phí Bộ công cụ Đường Thoát - chỉ mất 30 giây điền form ở đầu trang.</p>
+      </div>
+      <a href="#nhan-ngay" class="btn-primary reveal">NHẬN BỘ CÔNG CỤ MIỄN PHÍ</a>
+    </div>
+  </section>
+
+  <!-- COHORT SOFT CTA -->
+  <section class="section">
+    <div class="cohort reveal">
+      <span class="section-tag">Bước tiếp theo (không bắt buộc)</span>
+      <h3>Muốn đi sâu hơn? Có khoá "Đường Thoát"</h3>
+      <p>Sau khi dùng bộ công cụ, nếu bạn muốn được cầm tay chấm deal thật của chính mình - định giá, dòng tiền, kịch bản thoát hàng - có khoá cohort "Đường Thoát" (học phí 4.9 - 14.9 triệu, theo đợt). Cứ nhận quà miễn phí trước đã.</p>
+      <a href="#nhan-ngay" class="btn-ghost">Tôi muốn nhận quà miễn phí trước</a>
+    </div>
+    <div class="disclaimer">
+      <strong>Lưu ý:</strong> Toàn bộ tài liệu và nội dung trên trang này mang tính <strong>giáo dục, tham khảo</strong>, không phải tư vấn đầu tư, không phải chứng thư thẩm định giá hay tư vấn pháp lý chính thức. Mọi quyết định mua/bán bất động sản là của bạn; với phần pháp lý, hãy đối chiếu thêm với luật sư/văn phòng công chứng.
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-logo"><span class="logo-mark">ĐT</span> Đường Thoát</div>
+    <p class="footer-desc">Cố vấn bất động sản dòng tiền - Đỗ Tấn Minh</p>
+    <div class="footer-links">
+      <a href="chinh-sach-bao-mat.html" target="_blank" rel="noopener">Chính sách bảo mật</a>
+      <a href="dieu-khoan-su-dung.html" target="_blank" rel="noopener">Điều khoản dịch vụ</a>
+    </div>
+    <p class="footer-copy">&copy; 2026 Đỗ Tấn Minh. Mọi quyền được bảo lưu.</p>
+  </footer>
+
+  <script>
+    // ===== Theme =====
+    function initTheme(){var s=localStorage.getItem('theme');var d=window.matchMedia('(prefers-color-scheme: dark)').matches;document.documentElement.setAttribute('data-theme',s||(d?'dark':'light'));}
+    initTheme();
+    document.getElementById('themeToggle').addEventListener('click',function(){var c=document.documentElement.getAttribute('data-theme');var n=c==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);localStorage.setItem('theme',n);});
+
+    // ===== Header scroll =====
+    var header=document.getElementById('header');
+    window.addEventListener('scroll',function(){header.classList.toggle('scrolled',window.scrollY>50);});
+
+    // ===== Reveal =====
+    var ro=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)e.target.classList.add('active');});},{threshold:.1,rootMargin:'0px 0px -80px 0px'});
+    document.querySelectorAll('.reveal').forEach(function(el){ro.observe(el);});
+
+    // ===== Mobile menu =====
+    var menuToggle=document.getElementById('menuToggle'),mobileNav=document.getElementById('mobileNav'),mobileOverlay=document.getElementById('mobileOverlay'),mobileNavClose=document.getElementById('mobileNavClose');
+    function openMenu(){mobileNav.classList.add('open');mobileOverlay.classList.add('open');menuToggle.setAttribute('aria-expanded','true');document.body.style.overflow='hidden';}
+    function closeMenu(){mobileNav.classList.remove('open');mobileOverlay.classList.remove('open');menuToggle.setAttribute('aria-expanded','false');document.body.style.overflow='';}
+    menuToggle.addEventListener('click',openMenu);mobileNavClose.addEventListener('click',closeMenu);mobileOverlay.addEventListener('click',closeMenu);
+    mobileNav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',closeMenu);});
+
+    // ===== Smooth anchors (offset header) =====
+    document.querySelectorAll('a[href^="#"]').forEach(function(l){l.addEventListener('click',function(e){var href=this.getAttribute('href');if(href==='#')return;var t=document.querySelector(href);if(t){e.preventDefault();var h=document.getElementById('header').offsetHeight||70;var y=t.getBoundingClientRect().top+window.pageYOffset-h-10;window.scrollTo({top:y,behavior:'smooth'});}});});
+
+    // ===== FAQ accordion =====
+    document.querySelectorAll('.faq-q').forEach(function(b){b.addEventListener('click',function(){this.parentElement.classList.toggle('open');});});
+
+    // ===== Tracking helpers (Meta Pixel browser-side) =====
+    function getCookie(n){var m=document.cookie.match(new RegExp('(^| )'+n+'=([^;]+)'));return m?decodeURIComponent(m[2]):'';}
+    function getFbc(){var c=getCookie('_fbc');if(c)return c;var p=new URLSearchParams(window.location.search);var fb=p.get('fbclid');if(fb){c='fb.1.'+Date.now()+'.'+fb;document.cookie='_fbc='+c+'; max-age='+(90*24*60*60)+'; path=/; SameSite=Lax';return c;}return '';}
+    function getFbp(){var c=getCookie('_fbp');if(c)return c;var r=Math.floor(Math.random()*2147483647);c='fb.1.'+Date.now()+'.'+r;document.cookie='_fbp='+c+'; max-age='+(90*24*60*60)+'; path=/; SameSite=Lax';return c;}
+
+    // ==== CONFIG - TỰ ĐỔI khi deploy ====
+    // 1) Tạo Google Sheet + dán code Apps Script (xem hướng dẫn kèm theo) rồi dán URL /exec vào đây:
+    var WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbylL5rLudeXkf6iTO171xx3IaU0eEKiOa0Hrl3mgQiLX1OtPObx8nKIW9dbXAoCDFc-/exec';
+    // 2) Chuỗi bí mật ĐÃ KHỚP sẵn với SECRET_TOKEN trong Code.gs (không cần đổi):
+    var GAS_SECRET  = 'dt7Qk9mXvR2pLs4Wc8Nf1Hb6Zy3Ja5Ge0Ut';
+
+    // ===== Form =====
+    var regForm=document.getElementById('regForm'),submitBtn=document.getElementById('submitBtn');
+    function validateField(i){var g=i.closest('.form-group');if(!g)return true;var ok=true;var v=(i.value||'').trim();if(i.required&&!v)ok=false;else if(i.type==='email'&&v)ok=/^[^\s@]+@[^\s@]+\.[^\s@]+$/i.test(v);else if(i.type==='tel'&&v)ok=/^(0[0-9]{9}|\+84[0-9]{9})$/.test(v);if(ok){g.classList.remove('has-error');i.classList.remove('error');}else{g.classList.add('has-error');i.classList.add('error');}return ok;}
+    regForm.querySelectorAll('input[required],select[required]').forEach(function(i){i.addEventListener('blur',function(){validateField(this);});i.addEventListener('input',function(){if(this.classList.contains('error'))validateField(this);});i.addEventListener('change',function(){if(this.classList.contains('error'))validateField(this);});});
+
+    regForm.addEventListener('submit',function(e){
+      e.preventDefault();
+      if(submitBtn.disabled)return;
+      if(document.getElementById('website').value)return; // honeypot
+      var ok=true;
+      regForm.querySelectorAll('input[required],select[required]').forEach(function(i){if(!validateField(i))ok=false;});
+      if(!ok)return;
+
+      submitBtn.classList.add('loading');submitBtn.disabled=true;
+      var queryParams=new URLSearchParams(window.location.search);
+      var eventId='lead_'+Date.now()+'_'+Math.random().toString(36).substr(2,9);
+      var payload={
+        event:'lead',
+        secret:GAS_SECRET,
+        fullname:document.getElementById('fullname').value.trim(),
+        phone:document.getElementById('phone').value.trim(),
+        email:document.getElementById('email').value.trim(),
+        timestamp:new Date().toISOString(),
+        event_id:eventId,
+        utm_source:queryParams.get('utm_source')||'',
+        utm_medium:queryParams.get('utm_medium')||'',
+        utm_campaign:queryParams.get('utm_campaign')||'',
+        utm_content:queryParams.get('utm_content')||'',
+        utm_term:queryParams.get('utm_term')||'',
+        ref:queryParams.get('ref')||'',
+        fbclid:queryParams.get('fbclid')||''
+      };
+      // Google Sheet (GAS) cần Content-Type text/plain để né CORS preflight; body vẫn là JSON.
+      fetch(WEBHOOK_URL,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(payload)})
+        .then(function(r){return r.json().catch(function(){return{};});})
+        .then(function(data){
+          submitBtn.classList.remove('loading');
+          if(data&&data.status==='success'){
+            // Pixel browser-side (dedup bằng cùng event_id nếu sau này thêm CAPI)
+            if(typeof fbq!=='undefined')fbq('track','Lead',{content_name:'Bo cong cu Duong Thoat'},{eventID:eventId});
+            getFbc();getFbp();
+            var ft=document.querySelector('.form-title');if(ft)ft.style.display='none';
+            regForm.classList.add('hidden');
+            document.getElementById('formThanks').classList.add('active');
+          }else{
+            submitBtn.disabled=false;
+            alert('Gửi đăng ký chưa thành công. Vui lòng thử lại nhé!');
+          }
+        })
+        .catch(function(err){
+          submitBtn.classList.remove('loading');submitBtn.disabled=false;
+          alert('Lỗi kết nối. Vui lòng thử lại nhé!');
+          console.error(err);
+        });
+    });
+  </script>
+</body>
+</html>
